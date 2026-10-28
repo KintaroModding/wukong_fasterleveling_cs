@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openmods.nexus/openmods.schema.json",
+  "openmods": 1,
+  "name": "Faster Leveling (C#)",
+  "summary": "Levels come faster: every level needs less XP. You set the divider in config.json (default 2 = half the XP). Needs C# Loader.",
+  "games": ["black-myth-wukong"],
+  "tags": ["gameplay"],
+  "requires": ["C# Loader v1.0.1 or newer (github.com/KintaroModding/b1csharploader)"],
+  "gameVersions": ["1.0.21"],
+  "cover": "docs/cover.png"
+}

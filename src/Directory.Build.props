@@ -1,0 +1,9 @@
+<Project>
+
+  <!-- The build output goes to ..\dist, so src holds only the sources. -->
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\dist\obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)..\dist\bin\</BaseOutputPath>
+  </PropertyGroup>
+
+</Project>

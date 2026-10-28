@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    A C# Loader mod for Black Myth: Wukong: a .NET Framework 4.7.2 DLL that the game's Mono runtime loads.
+    build.ps1 passes GameDll (the folder with the game's C# DLLs), ModBase (CSharpModBase.dll of C# Loader) and
+    Version (from mod.json). The game and the loader provide these DLLs at runtime, so none of them is copied.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>wukong_fasterleveling_cs</AssemblyName>
+    <RootNamespace>FasterLeveling</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Version>1.0</Version>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <DebugType>none</DebugType>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CSharpModBase" HintPath="$(ModBase)" Private="false" />
+    <Reference Include="BtlSvr.Main" HintPath="$(GameDll)\BtlSvr.Main.dll" Private="false" />
+    <Reference Include="B1UI_GSE.Script" HintPath="$(GameDll)\B1UI_GSE.Script.dll" Private="false" />
+    <Reference Include="b1.Managed" HintPath="$(GameDll)\b1.Managed.dll" Private="false" />
+    <Reference Include="b1.Native" HintPath="$(GameDll)\b1.Native.dll" Private="false" />
+    <Reference Include="b1.NativePlugins" HintPath="$(GameDll)\b1.NativePlugins.dll" Private="false" />
+    <Reference Include="GSE.Core" HintPath="$(GameDll)\GSE.Core.dll" Private="false" />
+    <Reference Include="GSE.ProtobufDB" HintPath="$(GameDll)\GSE.ProtobufDB.dll" Private="false" />
+    <Reference Include="Google.Protobuf" HintPath="$(GameDll)\Google.Protobuf.dll" Private="false" />
+    <Reference Include="Protobuf.RunTime" HintPath="$(GameDll)\Protobuf.RunTime.dll" Private="false" />
+    <Reference Include="UnrealEngine" HintPath="$(GameDll)\UnrealEngine.dll" Private="false" />
+    <Reference Include="UnrealEngine.Runtime" HintPath="$(GameDll)\UnrealEngine.Runtime.dll" Private="false" />
+    <Reference Include="LitJSON" HintPath="$(GameDll)\LitJSON.dll" Private="false" />
+  </ItemGroup>
+
+</Project>

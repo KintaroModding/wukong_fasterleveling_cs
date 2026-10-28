@@ -1,0 +1,5 @@
+{
+  "_help": "Faster Leveling (C#) settings. XpDivider: the game's XP for each level is divided by this number and rounded up; 2 = half the XP, 3 = a third, 1 = the game's values; from 1 to 100, decimals like 1.5 work. Changes apply at the next game start.",
+  "Enable": true,
+  "XpDivider": 2
+}

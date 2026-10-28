@@ -1,0 +1,14 @@
+{
+  "name": "Faster Leveling (C#)",
+  "folder": "wukong_fasterleveling_cs",
+  "author": "Kintaro",
+  "version": "1.0",
+  "description": "Every level needs less XP: the game's XP per level is divided by a number you set in config.json (default 2, half the XP). Needs C# Loader.",
+  "kind": "wukongcs",
+  "game": "wukong",
+  "gameFolder": "Black Myth Wukong",
+  "win64Path": "b1\\Binaries\\Win64",
+  "gameVersion": "1.0.21.23831",
+  "engine": "UE5_0",
+  "csharpLoader": "v1.0.1"
+}

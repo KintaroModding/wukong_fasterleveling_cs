@@ -26,7 +26,7 @@ gain XP as usual (enemies, bosses, everything else), so you reach each level fas
 
 ## Screenshots
 
-![Faster Leveling (C#)](docs/cover.png)
+![Faster Leveling (C#)](docs/cover.webp)
 
 ## How to install
 
